@@ -1,0 +1,24 @@
+drone
+  ├── _arm: "0000"        // Command to arm the drone
+  ├── _disarm: "0000"     // Command to disarm the drone
+  ├── _landed: "0000"     // Command to land the drone
+  ├── _takeoff: "0000"    // Command to take off with altitude
+  ├── _automatedpath: "0000" // Command for automated waypoint navigation
+  ├── waypoints            // Collection of waypoints for automated navigation
+  │   ├── waypoint1
+  │   │   ├── latitude: 37.7749
+  │   │   ├── longitude: -122.4194
+  │   │   ├── altitude: 10
+  │   │   └── action: "Loiter" // Optional action at this waypoint
+  │   ├── waypoint2
+  │   │   ├── latitude: 37.7750
+  │   │   ├── longitude: -122.4184
+  │   │   ├── altitude: 20
+  │   │   └── action: "Land"
+  │   └── ...
+  ├── gpsLocation          // Current GPS location of the drone
+  │   ├── latitude: 37.7749
+  │   ├── longitude: -122.4194
+  │   └── altitude: 10
+  └── speed                // Current speed of the drone
+      └── value: 0.0       // Speed in m/s
